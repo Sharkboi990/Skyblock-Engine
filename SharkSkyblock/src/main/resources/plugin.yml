@@ -3,7 +3,7 @@ version: '1.0.0'
 main: dev.shark.skyblock.SharkSkyblock
 api-version: '1.21'
 description: A feature-rich Skyblock plugin with economy, skills, quests, and ocean events.
-authors: [SharkDev]
+authors: [Sharkboi]
 
 permissions:
   sharksb.admin:
