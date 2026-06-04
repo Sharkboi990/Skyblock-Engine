@@ -1,135 +1,163 @@
 # SharkSkyblock
 
-SharkSkyblock is a custom Skyblock plugin built for Paper 1.21.1.
+SharkSkyblock is a custom Skyblock plugin for Paper 1.21.1 focused on progression, economy, island management, quests, ocean events, and player assistance systems.
 
-The goal of this project is to provide a lightweight Skyblock experience with progression systems, an economy, quests, and ocean-themed gameplay while remaining easy to configure and maintain.
+The project is currently under active development. Features, balancing, performance improvements, and new content will be added over time.
 
-This project is currently under development and will continue to receive updates as new features are added and existing systems are improved.
+A public release will be published once the plugin reaches a stable state.
 
-Once the plugin reaches a stable state, it will be released publicly.
-
-## Current Features
+## Features
 
 ### Island System
 
-* Create an island
+* Create a personal island
 * Teleport to your island
 * Delete your island
 * One island per player
-* Automatic island generation
+* Automatic island placement
 
 ### Economy
 
 * Shark Coins currency
 * Player balances
-* Player-to-player payments
-* SQLite storage
+* Coin transfers between players
+* SQLite data storage
 
 ### Skills
 
-* Mining skill
-* Fishing skill
-* Level progression from 1 to 50
-* Experience rewards from gameplay
+* Mining
+* Fishing
+* Level progression
+* Experience rewards
+* Skill-based advancement
 
-### Quests
+### Daily Quests
 
-* Daily mining quests
-* Daily fishing quests
-* Automatic progress tracking
+* Mining quests
+* Fishing quests
+* Progress tracking
 * Coin rewards
 
 ### Ocean Events
 
-* Periodic treasure chest events
+* Automatic treasure chest events
 * Server-wide announcements
-* Reward system for event winners
+* Reward system for winners
 
-### Protection
+### Island Protection
 
-* Island protection
-* Build restrictions outside owned islands
+* Protected islands
+* Build restrictions
 * Interaction protection
 
-### Data Storage
+### Shark Assistant
 
-* SQLite database
+A built-in assistant that helps players progress through the server.
+
+Functions include:
+
+* New player guidance
+* Progress recommendations
+* Quest reminders
+* Near-death warnings
+* Event notifications
+* Skill progression suggestions
+
+The assistant is rule-based and does not rely on external APIs or AI services.
+
+### Database
+
+* SQLite support
+* Persistent player data
 * Automatic saving and loading
 
 ## Commands
 
-### Player Commands
+### Island
 
+```text
 /island create
-Creates a new island.
-
 /island home
-Teleports you to your island.
-
 /island delete
-Deletes your island.
+```
 
+### Economy
+
+```text
 /balance
-Displays your Shark Coin balance.
-
 /pay <player> <amount>
-Sends Shark Coins to another player.
+```
 
+### Skills
+
+```text
 /skills
-Displays your current skill levels.
+```
 
+### Quests
+
+```text
 /quests
-Displays your quest progress.
+```
 
-### Admin Commands
+### Assistant
 
+```text
+/assistant
+/assistant help
+/assistant next
+/assistant stats
+```
+
+### Administration
+
+```text
 /sharksb reload
-Reloads the plugin configuration.
-
 /sharksb event
-Starts an ocean event manually.
+```
 
 ## Permissions
 
+```text
 sharksb.admin
+```
 
-Access to administrative commands.
+Provides access to administrative commands.
 
 ## Requirements
 
 * Java 21
-* Paper 1.21.1 or newer
+* Paper 1.21.1+
 
-## Planned Features
+## Roadmap
 
-The following features may be added in future updates:
+Planned improvements include:
 
 * Additional skills
+* More quest types
+* Expanded ocean events
 * Island upgrades
 * Island leaderboards
 * Trading system
-* Shark shrines
 * PlaceholderAPI support
 * GUI menus
-* More ocean events
-* Additional rewards and progression systems
+* Additional progression systems
+* More assistant functionality
 
-## Development
+## Development Status
 
 This project is actively maintained.
 
-Updates will include:
+Future updates may include:
 
-* New features
+* New gameplay features
 * Performance improvements
 * Bug fixes
-* Balancing changes
+* Balance changes
 * Quality of life improvements
-
-Suggestions and feedback are welcome.
 
 ## Release
 
-The plugin is currently in development.
+The plugin is not yet considered complete.
 
-A public release will be published once the project reaches a stable and complete state.
+Once development reaches a stable stage and the core systems are fully tested, SharkSkyblock will be released publicly.
