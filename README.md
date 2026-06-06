@@ -1,113 +1,129 @@
-# 🦈 SharkSkyblock
+# SharkSkyblock
 
-SharkSkyblock is a custom Skyblock progression plugin built for **Paper 1.21.1**, designed around structured gameplay systems including islands, economy, skills, quests, ocean events, and a rule-based assistant system.
+SharkSkyblock is a custom Skyblock plugin developed for Paper 1.21.1.  
+It focuses on structured progression systems including islands, economy, skills, quests, ocean events, and a rule-based assistant system.
 
-The focus is on modular design, progression-based gameplay, and maintainable backend architecture using **SQLite persistence**.
-
-The project is currently in active development. The **Island Generation System is ~75% complete**.
-
----
-
-## 📌 Project Status
-
-- 🏝️ Island Generation System: ~75% complete  
-- 🧠 Shark Assistant (Rule-Based AI): ~75% complete  
-- 💰 Economy System: In development  
-- ⛏️ Skills System: In development  
-- 📜 Quest System: In development  
-- 🌊 Ocean Events: Planned  
-- 🛡️ Island Protection System: In development  
-- 💾 SQLite Database Layer: Implemented (base structure ready)  
+The project is currently in active development.  
+The Island Generation System is approximately 75% complete, along with the Shark Assistant system at a similar stage.
 
 ---
 
-## ✨ Core Features
+## Project Overview
 
-### 🏝️ Island System
-A core gameplay system where every player receives a personal progression island.
+SharkSkyblock is designed to move away from traditional unstructured Skyblock gameplay and instead provide a progression-driven experience with modular systems that interact with each other.
 
-**Current implementation:**
-- Automatic island generation on request
-- One island per player restriction
-- Island teleport system (`/island home`)
-- Island creation and deletion logic
-- Structured island placement system
-- Base framework for future island upgrades
-
-**Status:** ~75% complete (generation + core lifecycle implemented, expansion systems in progress)
+Each system is designed to be independent but expandable, allowing future features to integrate without major rewrites.
 
 ---
 
-### 🧠 Shark Assistant (Rule-Based AI System)
-A built-in progression assistant that guides players without external APIs or AI services.
+## Development Status
 
-**Current features:**
+- Island Generation System: ~75% complete
+- Shark Assistant (Rule-Based AI): ~75% complete
+- Economy System: In development
+- Skills System: In development
+- Quest System: In development
+- Ocean Events: Planned
+- Island Protection System: In development
+- SQLite Database Layer: Implemented (base structure complete)
+
+---
+
+## Island System
+
+The Island System is the core gameplay foundation of SharkSkyblock.
+
+### Current Features
+- Automatic island generation for players
+- One island per player enforcement
+- Island teleport system (/island home)
+- Island creation system
+- Island deletion system
+- Structured island placement logic
+
+### Status
+The system is functional at a core level, with island creation, placement, and teleportation implemented. Expansion features such as upgrades and progression layers are planned.
+
+---
+
+## Shark Assistant (Rule-Based AI System)
+
+The Shark Assistant is a built-in guidance system designed to help players progress through the server.
+
+It does not use external APIs or AI services and is fully rule-based.
+
+### Current Features
 - New player onboarding guidance
 - Quest reminders and progression hints
 - Skill progression suggestions
 - Event notifications
-- Survival warnings (low health / risk states)
-- Rule-based contextual response system
+- Survival warnings (low health or danger states)
 
-**Design goals:**
-- Fully offline system (no external AI dependency)
-- Lightweight rule engine
-- Easy expansion via configuration or code modules
-- Integration with all major gameplay systems
-
----
-
-### 💰 Economy System (In Development)
-A server-wide currency system designed for progression and trading.
-
-**Planned features:**
-- Shark Coins currency
-- Player balance tracking
-- Secure player-to-player transfers
-- Economy hooks for quests, skills, and events
-- SQLite persistence support
+### Design Approach
+- Fully offline system
+- Rule-based decision logic
+- Lightweight performance impact
+- Integrated with gameplay systems
+- Expandable behavior rules
 
 ---
 
-### ⛏️ Skills System (In Development)
-A progression system tied directly to gameplay activity.
+## Economy System (In Development)
 
-**Planned skills:**
+A global currency system built around Shark Coins.
+
+### Planned Features
+- Player balance system
+- Coin earning from gameplay activities
+- Player-to-player transfers
+- Integration with quests and skills
+- SQLite-based persistence
+
+---
+
+## Skills System (In Development)
+
+A progression system based on player activity.
+
+### Planned Skills
 - Mining skill progression
 - Fishing skill progression
-- Experience-based leveling
-- Unlockable rewards per milestone
-- Integration with quests and economy systems
+- Experience-based leveling system
+- Rewards per skill milestone
+- Integration with quests and economy
 
 ---
 
-### 📜 Quest System (In Development)
-A structured objective system for daily and long-term progression.
+## Quest System (In Development)
 
-**Planned features:**
-- Mining and fishing quests
-- Dynamic progress tracking
+A structured objective system designed to guide player progression.
+
+### Planned Features
+- Daily mining and fishing quests
+- Progress tracking system
 - Coin and XP rewards
-- Rotating daily quest pool
-- Integration with skills system
+- Rotating quest pool system
+- Integration with skills and economy
 
 ---
 
-### 🌊 Ocean Events (Planned)
-Server-wide dynamic events designed to encourage activity and competition.
+## Ocean Events (Planned)
 
-**Planned features:**
-- Treasure chest spawn events
-- Global server announcements
-- Competitive loot rewards
-- Rare item drops
+Server-wide dynamic events designed to increase player activity.
+
+### Planned Features
+- Treasure chest spawning events
+- Global announcements
+- Competitive reward system
+- Rare loot drops and bonuses
 
 ---
 
-### 🛡️ Island Protection System (In Development)
-Prevents griefing and enforces structured island ownership rules.
+## Island Protection System (In Development)
 
-**Planned features:**
+A protection layer to prevent griefing and enforce island ownership rules.
+
+### Planned Features
 - Block protection within island boundaries
 - Interaction restrictions based on ownership
 - Permission-based access control
@@ -115,35 +131,56 @@ Prevents griefing and enforces structured island ownership rules.
 
 ---
 
-### 💾 Database System (SQLite)
-Persistent backend system used for all player and island data.
+## SQLite Database System
 
-**Current implementation:**
+The plugin uses SQLite for persistent data storage.
+
+### Current Implementation
 - Player data storage
 - Island data persistence
-- Base infrastructure for future systems
-- Automatic save/load handling
+- Base structure for future systems
+- Automatic save and load handling
 
 ---
 
-## 🧱 Architecture Overview
+## Architecture
 
-SharkSkyblock is designed using a modular and scalable architecture:
+SharkSkyblock is built using a modular architecture.
 
-- Independent feature modules (Island, Economy, Skills, Assistant)
-- Shared service layer for player data access
-- SQLite-backed persistence layer
+### Key Principles
+- Each system is independent (Island, Economy, Skills, Assistant)
+- Shared service layer for data access
+- SQLite-based persistence layer
 - Event-driven system communication
-- Expandable structure without core rewrites
+- Expandable without core rewrites
 
-This design allows new systems to be added without modifying existing core logic.
+This architecture allows new features to be added without breaking existing systems.
 
 ---
 
-## 📦 Commands
+## Commands
 
-### 🏝️ Island Commands
-```text
+### Island Commands
 /island create   - Create a new island
 /island home     - Teleport to your island
 /island delete   - Delete your island
+
+---
+
+## Design Philosophy
+
+SharkSkyblock is designed around structured progression instead of open-ended sandbox gameplay.
+
+The core design goals are:
+- Clear progression systems for players
+- Modular and maintainable architecture
+- Lightweight but meaningful economy interaction
+- Expandable systems without rewriting core logic
+- Long-term scalability for future features
+  
+---
+
+## Notes
+
+This project is actively evolving.  
+Features and systems may change as development continues, balancing improves, and architecture is refined.
