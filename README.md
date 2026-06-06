@@ -1,163 +1,149 @@
-# SharkSkyblock
+# 🦈 SharkSkyblock
 
-SharkSkyblock is a custom Skyblock plugin for Paper 1.21.1 focused on progression, economy, island management, quests, ocean events, and player assistance systems.
+SharkSkyblock is a custom Skyblock progression plugin built for **Paper 1.21.1**, designed around structured gameplay systems including islands, economy, skills, quests, ocean events, and a rule-based assistant system.
 
-The project is currently under active development. Features, balancing, performance improvements, and new content will be added over time.
+The focus is on modular design, progression-based gameplay, and maintainable backend architecture using **SQLite persistence**.
 
-A public release will be published once the plugin reaches a stable state.
+The project is currently in active development. The **Island Generation System is ~75% complete**.
 
-## Features
+---
 
-### Island System
+## 📌 Project Status
 
-* Create a personal island
-* Teleport to your island
-* Delete your island
-* One island per player
-* Automatic island placement
+- 🏝️ Island Generation System: ~75% complete  
+- 🧠 Shark Assistant (Rule-Based AI): ~75% complete  
+- 💰 Economy System: In development  
+- ⛏️ Skills System: In development  
+- 📜 Quest System: In development  
+- 🌊 Ocean Events: Planned  
+- 🛡️ Island Protection System: In development  
+- 💾 SQLite Database Layer: Implemented (base structure ready)  
 
-### Economy
+---
 
-* Shark Coins currency
-* Player balances
-* Coin transfers between players
-* SQLite data storage
+## ✨ Core Features
 
-### Skills
+### 🏝️ Island System
+A core gameplay system where every player receives a personal progression island.
 
-* Mining
-* Fishing
-* Level progression
-* Experience rewards
-* Skill-based advancement
+**Current implementation:**
+- Automatic island generation on request
+- One island per player restriction
+- Island teleport system (`/island home`)
+- Island creation and deletion logic
+- Structured island placement system
+- Base framework for future island upgrades
 
-### Daily Quests
+**Status:** ~75% complete (generation + core lifecycle implemented, expansion systems in progress)
 
-* Mining quests
-* Fishing quests
-* Progress tracking
-* Coin rewards
+---
 
-### Ocean Events
+### 🧠 Shark Assistant (Rule-Based AI System)
+A built-in progression assistant that guides players without external APIs or AI services.
 
-* Automatic treasure chest events
-* Server-wide announcements
-* Reward system for winners
+**Current features:**
+- New player onboarding guidance
+- Quest reminders and progression hints
+- Skill progression suggestions
+- Event notifications
+- Survival warnings (low health / risk states)
+- Rule-based contextual response system
 
-### Island Protection
+**Design goals:**
+- Fully offline system (no external AI dependency)
+- Lightweight rule engine
+- Easy expansion via configuration or code modules
+- Integration with all major gameplay systems
 
-* Protected islands
-* Build restrictions
-* Interaction protection
+---
 
-### Shark Assistant
+### 💰 Economy System (In Development)
+A server-wide currency system designed for progression and trading.
 
-A built-in assistant that helps players progress through the server.
+**Planned features:**
+- Shark Coins currency
+- Player balance tracking
+- Secure player-to-player transfers
+- Economy hooks for quests, skills, and events
+- SQLite persistence support
 
-Functions include:
+---
 
-* New player guidance
-* Progress recommendations
-* Quest reminders
-* Near-death warnings
-* Event notifications
-* Skill progression suggestions
+### ⛏️ Skills System (In Development)
+A progression system tied directly to gameplay activity.
 
-The assistant is rule-based and does not rely on external APIs or AI services.
+**Planned skills:**
+- Mining skill progression
+- Fishing skill progression
+- Experience-based leveling
+- Unlockable rewards per milestone
+- Integration with quests and economy systems
 
-### Database
+---
 
-* SQLite support
-* Persistent player data
-* Automatic saving and loading
+### 📜 Quest System (In Development)
+A structured objective system for daily and long-term progression.
 
-## Commands
+**Planned features:**
+- Mining and fishing quests
+- Dynamic progress tracking
+- Coin and XP rewards
+- Rotating daily quest pool
+- Integration with skills system
 
-### Island
+---
 
+### 🌊 Ocean Events (Planned)
+Server-wide dynamic events designed to encourage activity and competition.
+
+**Planned features:**
+- Treasure chest spawn events
+- Global server announcements
+- Competitive loot rewards
+- Rare item drops
+
+---
+
+### 🛡️ Island Protection System (In Development)
+Prevents griefing and enforces structured island ownership rules.
+
+**Planned features:**
+- Block protection within island boundaries
+- Interaction restrictions based on ownership
+- Permission-based access control
+- Expandable protection rule system
+
+---
+
+### 💾 Database System (SQLite)
+Persistent backend system used for all player and island data.
+
+**Current implementation:**
+- Player data storage
+- Island data persistence
+- Base infrastructure for future systems
+- Automatic save/load handling
+
+---
+
+## 🧱 Architecture Overview
+
+SharkSkyblock is designed using a modular and scalable architecture:
+
+- Independent feature modules (Island, Economy, Skills, Assistant)
+- Shared service layer for player data access
+- SQLite-backed persistence layer
+- Event-driven system communication
+- Expandable structure without core rewrites
+
+This design allows new systems to be added without modifying existing core logic.
+
+---
+
+## 📦 Commands
+
+### 🏝️ Island Commands
 ```text
-/island create
-/island home
-/island delete
-```
-
-### Economy
-
-```text
-/balance
-/pay <player> <amount>
-```
-
-### Skills
-
-```text
-/skills
-```
-
-### Quests
-
-```text
-/quests
-```
-
-### Assistant
-
-```text
-/assistant
-/assistant help
-/assistant next
-/assistant stats
-```
-
-### Administration
-
-```text
-/sharksb reload
-/sharksb event
-```
-
-## Permissions
-
-```text
-sharksb.admin
-```
-
-Provides access to administrative commands.
-
-## Requirements
-
-* Java 21
-* Paper 1.21.1+
-
-## Roadmap
-
-Planned improvements include:
-
-* Additional skills
-* More quest types
-* Expanded ocean events
-* Island upgrades
-* Island leaderboards
-* Trading system
-* PlaceholderAPI support
-* GUI menus
-* Additional progression systems
-* More assistant functionality
-
-## Development Status
-
-This project is actively maintained.
-
-Future updates may include:
-
-* New gameplay features
-* Performance improvements
-* Bug fixes
-* Balance changes
-* Quality of life improvements
-
-## Release
-
-The plugin is not yet considered complete.
-
-Once development reaches a stable stage and the core systems are fully tested, SharkSkyblock will be released publicly.
+/island create   - Create a new island
+/island home     - Teleport to your island
+/island delete   - Delete your island
