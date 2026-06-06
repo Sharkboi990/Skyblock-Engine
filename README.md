@@ -161,9 +161,9 @@ This architecture allows new features to be added without breaking existing syst
 ## Commands
 
 ### Island Commands
--/island create   - Create a new island
--/island home     - Teleport to your island
--/island delete   - Delete your island
+- /island create   - Create a new island
+- /island home     - Teleport to your island
+- /island delete   - Delete your island
 
 ---
 
