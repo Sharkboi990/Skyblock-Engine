@@ -1,7 +1,7 @@
 # SharkSkyblock
 
-**Current Version:** 0.1.8
-**Development Progress:** ~30% Complete
+- **Current Version:** 0.1.8
+- **Development Progress:** ~30% Complete
 
 SharkSkyblock is a custom Skyblock plugin for Paper 1.21.1 focused on progression, island management, player assistance, economy systems, skills, quests, and server management tools.
 
