@@ -1,17 +1,36 @@
 # SharkSkyblock
 
-- **Current Version:** 0.1.8
-- **Development Progress:** ~30% Complete
+Version: 0.1.8
 
-SharkSkyblock is a custom Skyblock plugin for Paper 1.21.1 focused on progression, island management, player assistance, economy systems, skills, quests, and server management tools.
+Development Progress: ~30% Complete
+
+SharkSkyblock is a custom Skyblock plugin developed for Paper 1.21.1 focused on progression-based gameplay through islands, skills, collections, quests, economy systems, anti-cheat systems, player assistance tools, and GUI-driven interaction.
 
 The project is currently under active development and is not yet ready for public release.
 
+---
+
+## Repository Notice
+
+This repository is not updated in real time.
+
+Development is performed primarily on private development branches and local builds. Public repository updates are intentionally delayed by approximately three months.
+
+This allows major systems to be developed, tested, optimized, and refactored before being published publicly.
+
+As a result, the repository may not always reflect the latest internal development progress.
+
+Repository releases should be considered stable development snapshots rather than real-time development builds.
+
+---
+
 ## Project Overview
 
-SharkSkyblock is designed around structured progression rather than traditional Skyblock gameplay. The goal is to provide players with meaningful progression systems, intuitive interfaces, and long-term gameplay objectives through a modular and expandable architecture.
+SharkSkyblock aims to provide a progression-focused Skyblock experience built around long-term player goals rather than traditional survival gameplay.
 
-Current development is focused on establishing core systems before expanding into advanced progression and content features.
+The project is designed using a modular architecture that allows new systems to be added without major rewrites, making future expansion significantly easier.
+
+Current development is focused on building core infrastructure before expanding into advanced gameplay systems.
 
 ---
 
@@ -20,20 +39,30 @@ Current development is focused on establishing core systems before expanding int
 ### Implemented
 
 * Island Generation System (~75% Complete)
-* Island NPC System
+* Island Management System
 * Player Menu System
 * Hub System
-* Shark Assistant System (~75% Complete)
+* Shark Assistant Framework
 * Admin GUI
 * Anti-Cheat Framework
 * Anti-Cheat Score System
-* SQLite Database Layer
+* SQLite Persistence Layer
 
-### In Development
+### Under Development
 
 * Economy System
 * Skills System
+* Collections System
+* Recipe Unlock System
+* Shop System
 * Quest System
+* Achievement System
+* Profile System
+* Statistics Expansion
+* Skill Rewards
+* Collection Rewards
+* Advanced Teleportation System
+* Progression Menu Redesign
 * Island Protection System
 
 ### Planned
@@ -58,43 +87,51 @@ Current Features:
 * Island deletion
 * Island teleportation
 * Island ownership management
-* Structured island placement system
+* Structured island placement
 
 Current Status:
 
 * Core functionality implemented
-* Approximately 75% complete
-* Future expansion systems are still in development
+* Generation system approximately 75% complete
 
 ---
 
-### Island NPC System
+### Island Management
 
-Every island includes a dedicated NPC that acts as a central access point for island-related systems.
+Players can manage their islands through GUI-driven interfaces.
 
 Features:
 
-* Island management access
-* Quick navigation menus
-* GUI-based interactions
-* Centralized island controls
+* Island controls
+* Island information
+* Quick-access menus
+* Future upgrade support
 
-The NPC is intended to provide a simple and accessible user experience without requiring players to memorize commands.
+The system is designed to reduce command dependency and improve accessibility.
 
 ---
 
 ### Player Menu System
 
-Players receive a dedicated hotbar item that provides access to major gameplay systems.
+Players receive a dedicated hotbar item that acts as a centralized access point for gameplay systems.
 
 Current Menus:
 
-* Skills
-* Statistics
-* Recipes
-* Teleportation
 * Island Management
+* Statistics
+* Teleportation
 * Progression Interfaces
+
+Menus Under Development:
+
+* Skills
+* Collections
+* Recipes
+* Shops
+* Quests
+* Achievements
+* Profile
+* Settings
 
 The menu system serves as the primary interaction hub for players.
 
@@ -102,7 +139,7 @@ The menu system serves as the primary interaction hub for players.
 
 ### Shark Assistant
 
-Shark Assistant is a built-in rule-based assistant designed to guide players through progression systems.
+Shark Assistant is a built-in rule-based assistant designed to guide players throughout their progression.
 
 Features:
 
@@ -113,7 +150,7 @@ Features:
 * Survival warnings
 * Context-aware assistance
 
-The assistant operates entirely offline and does not rely on external AI services or APIs.
+The assistant operates entirely offline and does not rely on external AI services.
 
 ---
 
@@ -124,18 +161,19 @@ A custom hub schematic acts as the central player spawn and navigation area.
 Features:
 
 * Centralized spawn location
-* Navigation point for future systems
-* Future NPC integration support
-* Expandable framework
+* Access point for gameplay systems
+* GUI integration
+* Future expansion support
 
 ---
 
-### Economy System (In Development)
+### Economy System
 
-The economy system is built around Shark Coins.
+Currently under development.
 
 Planned Features:
 
+* Shark Coins currency
 * Player balances
 * Coin transfers
 * Reward systems
@@ -144,63 +182,94 @@ Planned Features:
 
 ---
 
-### Skills System (In Development)
+### Skills System
 
-A progression framework designed around player activity.
+Currently under development.
 
-Planned Skill Categories:
+Planned Skills:
 
 * Mining
 * Fishing
+* Farming
+* Combat
+* Foraging
 
 Planned Features:
 
 * Experience progression
 * Skill levels
 * Milestone rewards
-* Economy integration
+* Collection integration
 * Quest integration
 
 ---
 
-### Quest System (In Development)
+### Collections System
 
-A structured objective system designed to provide progression goals.
+Currently under development.
+
+Planned Features:
+
+* Resource tracking
+* Collection progression
+* Unlockable rewards
+* Recipe unlock integration
+* Progress milestones
+
+---
+
+### Recipe System
+
+Currently under development.
+
+Planned Features:
+
+* Unlockable recipes
+* Collection requirements
+* Progression-based crafting
+* Recipe tracking interface
+
+---
+
+### Shop System
+
+Currently under development.
+
+Planned Features:
+
+* GUI-based shops
+* Buy and sell support
+* Economy integration
+* Flexible configuration
+
+---
+
+### Quest System
+
+Currently under development.
 
 Planned Features:
 
 * Daily quests
 * Mining quests
 * Fishing quests
+* Collection quests
 * Progress tracking
 * Coin rewards
 * Experience rewards
 
 ---
 
-### Island Protection System (In Development)
+### Achievement System
 
-A protection framework designed to enforce ownership rules and prevent griefing.
-
-Planned Features:
-
-* Block protection
-* Interaction restrictions
-* Ownership validation
-* Permission-based access
-
----
-
-### Ocean Events (Planned)
-
-Server-wide activities designed to increase player engagement.
+Currently under development.
 
 Planned Features:
 
-* Treasure chest events
-* Global announcements
-* Competitive rewards
-* Rare loot opportunities
+* Progress milestones
+* Achievement rewards
+* Long-term objectives
+* Progress tracking
 
 ---
 
@@ -208,7 +277,7 @@ Planned Features:
 
 A built-in anti-cheat framework designed to maintain fair gameplay.
 
-Features:
+Current Features:
 
 * Violation detection
 * Suspicious activity monitoring
@@ -225,8 +294,8 @@ Features:
 * Violation accumulation
 * Progressive flagging
 * Suspicion tracking
+* Administrative monitoring
 * Reduced impact from isolated false positives
-* Administrative monitoring support
 
 ---
 
@@ -239,8 +308,8 @@ Features:
 * GUI-based administration
 * Monitoring tools
 * Quick management actions
+* Anti-cheat integration
 * Administrative controls
-* System integration
 
 ---
 
@@ -248,10 +317,11 @@ Features:
 
 SharkSkyblock uses SQLite for persistent storage.
 
-Current Storage:
+Stored Data:
 
 * Player data
 * Island data
+* Statistics
 * Progression data
 
 Features:
@@ -260,6 +330,36 @@ Features:
 * Automatic loading
 * Persistent progression
 * Lightweight deployment
+
+---
+
+## Commands
+
+### Player Commands
+
+/island create
+
+/island home
+
+/island delete
+
+/menu
+
+### Administration Commands
+
+/admin
+
+### Anti-Cheat Commands
+
+The anti-cheat framework includes multiple administrative commands used for:
+
+* Violation management
+* Player monitoring
+* Anti-cheat score management
+* Flag inspection
+* Debugging
+* Configuration
+* Administrative moderation
 
 ---
 
@@ -276,38 +376,52 @@ Core Principles:
 * Expandable framework
 * Maintainable code structure
 
-This architecture allows new systems to be integrated without major modifications to existing systems.
+This architecture allows future systems to be integrated without major modifications to existing functionality.
 
 ---
 
-## Commands
+## Development Timeline
 
-### Player Commands
+SharkSkyblock is a long-term project currently in its early development stages.
 
-```text
-/island create
-/island home
-/island delete
-/menu
-```
+The project is approximately 30% complete overall and remains focused on building core infrastructure before moving toward a public release candidate.
 
-### Administration Commands
+Based on the current scope and planned systems, development is expected to continue for approximately 1-2 years before reaching a feature-complete release phase.
 
-```text
-/admin
-```
+Development is currently paused for approximately three months before active development resumes.
 
-### Anti-Cheat Commands
+The goal is to prioritize quality, maintainability, and long-term scalability rather than rushing development.
 
-The anti-cheat framework includes multiple administrative commands used for:
+---
 
-* Violation management
-* Player monitoring
-* Anti-cheat score management
-* Flag inspection
-* Debugging
-* Configuration
-* Administrative moderation
+## Changelog
+
+### Version 0.1.8
+
+Implemented:
+
+* Island Generation System foundation
+* Island Management System
+* Player Menu System
+* Hub System
+* Shark Assistant framework
+* Admin GUI
+* Anti-Cheat framework
+* Anti-Cheat Score System
+* SQLite persistence layer
+
+Current Focus:
+
+* Economy System
+* Skills System
+* Collections System
+* Recipe Unlock System
+* Shop System
+* Quest System
+* Achievement System
+* Progression Menu Redesign
+
+Development logs will continue to be updated as major milestones are completed.
 
 ---
 
@@ -317,8 +431,8 @@ SharkSkyblock is designed around:
 
 * Structured player progression
 * Long-term gameplay objectives
-* Modular architecture
 * GUI-driven interaction
+* Modular architecture
 * Lightweight performance impact
 * Expandable gameplay systems
 * Reduced command dependency
@@ -327,6 +441,6 @@ SharkSkyblock is designed around:
 
 ## Notes
 
-SharkSkyblock is currently in active development and is approximately 30% complete overall.
+SharkSkyblock remains an early-stage project and is far from feature complete.
 
-Version 0.1.8 represents an early development milestone focused on building the foundation of the project. Features, balancing, architecture, and gameplay systems may change significantly as development continues. Source code file will be uploaded in a few days for view only.
+Version 0.1.8 represents a foundational development milestone focused on core systems and infrastructure. Features, balancing, architecture, and gameplay systems may change significantly throughout development.
